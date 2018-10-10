@@ -1,0 +1,734 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		994454F3216DEFB600A8AEBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994454F2216DEFB600A8AEBB /* AppDelegate.swift */; };
+		994454F5216DEFB700A8AEBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 994454F4216DEFB700A8AEBB /* Assets.xcassets */; };
+		994454F8216DEFB700A8AEBB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 994454F6216DEFB700A8AEBB /* MainMenu.xib */; };
+		99445504216DEFB700A8AEBB /* m7_code_maker_hostTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99445503216DEFB700A8AEBB /* m7_code_maker_hostTests.swift */; };
+		9944550F216DEFB700A8AEBB /* m7_code_maker_hostUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9944550E216DEFB700A8AEBB /* m7_code_maker_hostUITests.swift */; };
+		99445523216DEFDC00A8AEBB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99445522216DEFDC00A8AEBB /* Cocoa.framework */; };
+		99445526216DEFDC00A8AEBB /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99445525216DEFDC00A8AEBB /* SourceEditorExtension.swift */; };
+		9944552D216DEFDC00A8AEBB /* m7-code-maker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 99445520216DEFDC00A8AEBB /* m7-code-maker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		99445533216DF02D00A8AEBB /* SingletonMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99445532216DF02D00A8AEBB /* SingletonMaker.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		99445500216DEFB700A8AEBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 994454E7216DEFB600A8AEBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 994454EE216DEFB600A8AEBB;
+			remoteInfo = "m7-code-maker-host";
+		};
+		9944550B216DEFB700A8AEBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 994454E7216DEFB600A8AEBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 994454EE216DEFB600A8AEBB;
+			remoteInfo = "m7-code-maker-host";
+		};
+		9944552B216DEFDC00A8AEBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 994454E7216DEFB600A8AEBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9944551F216DEFDC00A8AEBB;
+			remoteInfo = "m7-code-maker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		99445531216DEFDC00A8AEBB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9944552D216DEFDC00A8AEBB /* m7-code-maker.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		994454EF216DEFB600A8AEBB /* m7-code-maker-host.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "m7-code-maker-host.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		994454F2216DEFB600A8AEBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		994454F4216DEFB700A8AEBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		994454F7216DEFB700A8AEBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		994454F9216DEFB700A8AEBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		994454FA216DEFB700A8AEBB /* m7_code_maker_host.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = m7_code_maker_host.entitlements; sourceTree = "<group>"; };
+		994454FF216DEFB700A8AEBB /* m7-code-maker-hostTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "m7-code-maker-hostTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99445503216DEFB700A8AEBB /* m7_code_maker_hostTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = m7_code_maker_hostTests.swift; sourceTree = "<group>"; };
+		99445505216DEFB700A8AEBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9944550A216DEFB700A8AEBB /* m7-code-maker-hostUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "m7-code-maker-hostUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9944550E216DEFB700A8AEBB /* m7_code_maker_hostUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = m7_code_maker_hostUITests.swift; sourceTree = "<group>"; };
+		99445510216DEFB700A8AEBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99445520216DEFDC00A8AEBB /* m7-code-maker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "m7-code-maker.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99445522216DEFDC00A8AEBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		99445525216DEFDC00A8AEBB /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		99445529216DEFDC00A8AEBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9944552A216DEFDC00A8AEBB /* m7_code_maker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = m7_code_maker.entitlements; sourceTree = "<group>"; };
+		99445532216DF02D00A8AEBB /* SingletonMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonMaker.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		994454EC216DEFB600A8AEBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		994454FC216DEFB700A8AEBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99445507216DEFB700A8AEBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9944551D216DEFDC00A8AEBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99445523216DEFDC00A8AEBB /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		994454E6216DEFB600A8AEBB = {
+			isa = PBXGroup;
+			children = (
+				994454F1216DEFB600A8AEBB /* m7-code-maker-host */,
+				99445502216DEFB700A8AEBB /* m7-code-maker-hostTests */,
+				9944550D216DEFB700A8AEBB /* m7-code-maker-hostUITests */,
+				99445524216DEFDC00A8AEBB /* m7-code-maker */,
+				99445521216DEFDC00A8AEBB /* Frameworks */,
+				994454F0216DEFB600A8AEBB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		994454F0216DEFB600A8AEBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				994454EF216DEFB600A8AEBB /* m7-code-maker-host.app */,
+				994454FF216DEFB700A8AEBB /* m7-code-maker-hostTests.xctest */,
+				9944550A216DEFB700A8AEBB /* m7-code-maker-hostUITests.xctest */,
+				99445520216DEFDC00A8AEBB /* m7-code-maker.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		994454F1216DEFB600A8AEBB /* m7-code-maker-host */ = {
+			isa = PBXGroup;
+			children = (
+				994454F2216DEFB600A8AEBB /* AppDelegate.swift */,
+				994454F4216DEFB700A8AEBB /* Assets.xcassets */,
+				994454F6216DEFB700A8AEBB /* MainMenu.xib */,
+				994454F9216DEFB700A8AEBB /* Info.plist */,
+				994454FA216DEFB700A8AEBB /* m7_code_maker_host.entitlements */,
+			);
+			path = "m7-code-maker-host";
+			sourceTree = "<group>";
+		};
+		99445502216DEFB700A8AEBB /* m7-code-maker-hostTests */ = {
+			isa = PBXGroup;
+			children = (
+				99445503216DEFB700A8AEBB /* m7_code_maker_hostTests.swift */,
+				99445505216DEFB700A8AEBB /* Info.plist */,
+			);
+			path = "m7-code-maker-hostTests";
+			sourceTree = "<group>";
+		};
+		9944550D216DEFB700A8AEBB /* m7-code-maker-hostUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9944550E216DEFB700A8AEBB /* m7_code_maker_hostUITests.swift */,
+				99445510216DEFB700A8AEBB /* Info.plist */,
+			);
+			path = "m7-code-maker-hostUITests";
+			sourceTree = "<group>";
+		};
+		99445521216DEFDC00A8AEBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99445522216DEFDC00A8AEBB /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99445524216DEFDC00A8AEBB /* m7-code-maker */ = {
+			isa = PBXGroup;
+			children = (
+				99445525216DEFDC00A8AEBB /* SourceEditorExtension.swift */,
+				99445532216DF02D00A8AEBB /* SingletonMaker.swift */,
+				99445529216DEFDC00A8AEBB /* Info.plist */,
+				9944552A216DEFDC00A8AEBB /* m7_code_maker.entitlements */,
+			);
+			path = "m7-code-maker";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		994454EE216DEFB600A8AEBB /* m7-code-maker-host */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99445513216DEFB700A8AEBB /* Build configuration list for PBXNativeTarget "m7-code-maker-host" */;
+			buildPhases = (
+				994454EB216DEFB600A8AEBB /* Sources */,
+				994454EC216DEFB600A8AEBB /* Frameworks */,
+				994454ED216DEFB600A8AEBB /* Resources */,
+				99445531216DEFDC00A8AEBB /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9944552C216DEFDC00A8AEBB /* PBXTargetDependency */,
+			);
+			name = "m7-code-maker-host";
+			productName = "m7-code-maker-host";
+			productReference = 994454EF216DEFB600A8AEBB /* m7-code-maker-host.app */;
+			productType = "com.apple.product-type.application";
+		};
+		994454FE216DEFB700A8AEBB /* m7-code-maker-hostTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99445516216DEFB700A8AEBB /* Build configuration list for PBXNativeTarget "m7-code-maker-hostTests" */;
+			buildPhases = (
+				994454FB216DEFB700A8AEBB /* Sources */,
+				994454FC216DEFB700A8AEBB /* Frameworks */,
+				994454FD216DEFB700A8AEBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99445501216DEFB700A8AEBB /* PBXTargetDependency */,
+			);
+			name = "m7-code-maker-hostTests";
+			productName = "m7-code-maker-hostTests";
+			productReference = 994454FF216DEFB700A8AEBB /* m7-code-maker-hostTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		99445509216DEFB700A8AEBB /* m7-code-maker-hostUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99445519216DEFB700A8AEBB /* Build configuration list for PBXNativeTarget "m7-code-maker-hostUITests" */;
+			buildPhases = (
+				99445506216DEFB700A8AEBB /* Sources */,
+				99445507216DEFB700A8AEBB /* Frameworks */,
+				99445508216DEFB700A8AEBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9944550C216DEFB700A8AEBB /* PBXTargetDependency */,
+			);
+			name = "m7-code-maker-hostUITests";
+			productName = "m7-code-maker-hostUITests";
+			productReference = 9944550A216DEFB700A8AEBB /* m7-code-maker-hostUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		9944551F216DEFDC00A8AEBB /* m7-code-maker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9944552E216DEFDC00A8AEBB /* Build configuration list for PBXNativeTarget "m7-code-maker" */;
+			buildPhases = (
+				9944551C216DEFDC00A8AEBB /* Sources */,
+				9944551D216DEFDC00A8AEBB /* Frameworks */,
+				9944551E216DEFDC00A8AEBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "m7-code-maker";
+			productName = "m7-code-maker";
+			productReference = 99445520216DEFDC00A8AEBB /* m7-code-maker.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		994454E7216DEFB600A8AEBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = xyz.chenms;
+				TargetAttributes = {
+					994454EE216DEFB600A8AEBB = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					994454FE216DEFB700A8AEBB = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 994454EE216DEFB600A8AEBB;
+					};
+					99445509216DEFB700A8AEBB = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 994454EE216DEFB600A8AEBB;
+					};
+					9944551F216DEFDC00A8AEBB = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 994454EA216DEFB600A8AEBB /* Build configuration list for PBXProject "m7-code-maker-host" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 994454E6216DEFB600A8AEBB;
+			productRefGroup = 994454F0216DEFB600A8AEBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				994454EE216DEFB600A8AEBB /* m7-code-maker-host */,
+				994454FE216DEFB700A8AEBB /* m7-code-maker-hostTests */,
+				99445509216DEFB700A8AEBB /* m7-code-maker-hostUITests */,
+				9944551F216DEFDC00A8AEBB /* m7-code-maker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		994454ED216DEFB600A8AEBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				994454F5216DEFB700A8AEBB /* Assets.xcassets in Resources */,
+				994454F8216DEFB700A8AEBB /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		994454FD216DEFB700A8AEBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99445508216DEFB700A8AEBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9944551E216DEFDC00A8AEBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		994454EB216DEFB600A8AEBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				994454F3216DEFB600A8AEBB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		994454FB216DEFB700A8AEBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99445504216DEFB700A8AEBB /* m7_code_maker_hostTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99445506216DEFB700A8AEBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9944550F216DEFB700A8AEBB /* m7_code_maker_hostUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9944551C216DEFDC00A8AEBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99445526216DEFDC00A8AEBB /* SourceEditorExtension.swift in Sources */,
+				99445533216DF02D00A8AEBB /* SingletonMaker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		99445501216DEFB700A8AEBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 994454EE216DEFB600A8AEBB /* m7-code-maker-host */;
+			targetProxy = 99445500216DEFB700A8AEBB /* PBXContainerItemProxy */;
+		};
+		9944550C216DEFB700A8AEBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 994454EE216DEFB600A8AEBB /* m7-code-maker-host */;
+			targetProxy = 9944550B216DEFB700A8AEBB /* PBXContainerItemProxy */;
+		};
+		9944552C216DEFDC00A8AEBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9944551F216DEFDC00A8AEBB /* m7-code-maker */;
+			targetProxy = 9944552B216DEFDC00A8AEBB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		994454F6216DEFB700A8AEBB /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				994454F7216DEFB700A8AEBB /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		99445511216DEFB700A8AEBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		99445512216DEFB700A8AEBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		99445514216DEFB700A8AEBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "m7-code-maker-host/m7_code_maker_host.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = LD9JLNUXTG;
+				INFOPLIST_FILE = "m7-code-maker-host/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.chenms.m7-code-maker-host";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		99445515216DEFB700A8AEBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "m7-code-maker-host/m7_code_maker_host.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = LD9JLNUXTG;
+				INFOPLIST_FILE = "m7-code-maker-host/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.chenms.m7-code-maker-host";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		99445517216DEFB700A8AEBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = LD9JLNUXTG;
+				INFOPLIST_FILE = "m7-code-maker-hostTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.chenms.m7-code-maker-hostTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/m7-code-maker-host.app/Contents/MacOS/m7-code-maker-host";
+			};
+			name = Debug;
+		};
+		99445518216DEFB700A8AEBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = LD9JLNUXTG;
+				INFOPLIST_FILE = "m7-code-maker-hostTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.chenms.m7-code-maker-hostTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/m7-code-maker-host.app/Contents/MacOS/m7-code-maker-host";
+			};
+			name = Release;
+		};
+		9944551A216DEFB700A8AEBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = LD9JLNUXTG;
+				INFOPLIST_FILE = "m7-code-maker-hostUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.chenms.m7-code-maker-hostUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = "m7-code-maker-host";
+			};
+			name = Debug;
+		};
+		9944551B216DEFB700A8AEBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = LD9JLNUXTG;
+				INFOPLIST_FILE = "m7-code-maker-hostUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.chenms.m7-code-maker-hostUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = "m7-code-maker-host";
+			};
+			name = Release;
+		};
+		9944552F216DEFDC00A8AEBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "m7-code-maker/m7_code_maker.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = LD9JLNUXTG;
+				INFOPLIST_FILE = "m7-code-maker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.chenms.m7-code-maker-host.m7-code-maker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		99445530216DEFDC00A8AEBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "m7-code-maker/m7_code_maker.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = LD9JLNUXTG;
+				INFOPLIST_FILE = "m7-code-maker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "xyz.chenms.m7-code-maker-host.m7-code-maker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		994454EA216DEFB600A8AEBB /* Build configuration list for PBXProject "m7-code-maker-host" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99445511216DEFB700A8AEBB /* Debug */,
+				99445512216DEFB700A8AEBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99445513216DEFB700A8AEBB /* Build configuration list for PBXNativeTarget "m7-code-maker-host" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99445514216DEFB700A8AEBB /* Debug */,
+				99445515216DEFB700A8AEBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99445516216DEFB700A8AEBB /* Build configuration list for PBXNativeTarget "m7-code-maker-hostTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99445517216DEFB700A8AEBB /* Debug */,
+				99445518216DEFB700A8AEBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99445519216DEFB700A8AEBB /* Build configuration list for PBXNativeTarget "m7-code-maker-hostUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9944551A216DEFB700A8AEBB /* Debug */,
+				9944551B216DEFB700A8AEBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9944552E216DEFDC00A8AEBB /* Build configuration list for PBXNativeTarget "m7-code-maker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9944552F216DEFDC00A8AEBB /* Debug */,
+				99445530216DEFDC00A8AEBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 994454E7216DEFB600A8AEBB /* Project object */;
+}
