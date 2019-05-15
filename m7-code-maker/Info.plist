@@ -36,6 +36,14 @@
 					<key>XCSourceEditorCommandName</key>
 					<string>Singleton</string>
 				</dict>
+				<dict>
+					<key>XCSourceEditorCommandClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).GetterMaker</string>
+					<key>XCSourceEditorCommandIdentifier</key>
+					<string>$(PRODUCT_BUNDLE_IDENTIFIER).GetterMaker</string>
+					<key>XCSourceEditorCommandName</key>
+					<string>Getter</string>
+				</dict>
 			</array>
 			<key>XCSourceEditorExtensionPrincipalClass</key>
 			<string>$(PRODUCT_MODULE_NAME).SourceEditorExtension</string>

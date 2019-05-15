@@ -16,6 +16,7 @@
 		99445526216DEFDC00A8AEBB /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99445525216DEFDC00A8AEBB /* SourceEditorExtension.swift */; };
 		9944552D216DEFDC00A8AEBB /* m7-code-maker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 99445520216DEFDC00A8AEBB /* m7-code-maker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		99445533216DF02D00A8AEBB /* SingletonMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99445532216DF02D00A8AEBB /* SingletonMaker.swift */; };
+		99EDECED228BF98000C75690 /* GetterMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EDECEC228BF98000C75690 /* GetterMaker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		99445529216DEFDC00A8AEBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9944552A216DEFDC00A8AEBB /* m7_code_maker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = m7_code_maker.entitlements; sourceTree = "<group>"; };
 		99445532216DF02D00A8AEBB /* SingletonMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonMaker.swift; sourceTree = "<group>"; };
+		99EDECEC228BF98000C75690 /* GetterMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetterMaker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 			children = (
 				99445525216DEFDC00A8AEBB /* SourceEditorExtension.swift */,
 				99445532216DF02D00A8AEBB /* SingletonMaker.swift */,
+				99EDECEC228BF98000C75690 /* GetterMaker.swift */,
 				99445529216DEFDC00A8AEBB /* Info.plist */,
 				9944552A216DEFDC00A8AEBB /* m7_code_maker.entitlements */,
 			);
@@ -367,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99445526216DEFDC00A8AEBB /* SourceEditorExtension.swift in Sources */,
+				99EDECED228BF98000C75690 /* GetterMaker.swift in Sources */,
 				99445533216DF02D00A8AEBB /* SingletonMaker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
