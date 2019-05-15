@@ -10,6 +10,10 @@
 - 不需要选中文本
 - 如果有多个类，只为最上面的类生成
 
+### Getter
+- 在类的.m中选中property所在的行（可选择多个property）
+- 在.m底部生成getter方法
+- Inspired by [LazyPlugin](https://github.com/nangege/LazyPlugin)
 
 ------
 # 使用
