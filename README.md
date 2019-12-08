@@ -24,4 +24,5 @@
 - 双击启动一次m7-code-maker-host
 - 打开系统设置-扩展
 - 找到m7-code-maker-host，打勾
-- OK
+- OK，在Xcode-Editor最底下会看到m7-code-maker-host
+- 没有的话，就重启下Xcode
