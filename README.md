@@ -22,4 +22,6 @@
 - 在包右键显示包内容，Products-Applications
 - 将m7-code-maker-host复制到系统的应用程序中
 - 双击启动一次m7-code-maker-host
+- 打开系统设置-扩展
+- 找到m7-code-maker-host，打勾
 - OK
